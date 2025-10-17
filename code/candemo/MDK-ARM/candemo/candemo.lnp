@@ -3,6 +3,8 @@
 "candemo\main.o"
 "candemo\gpio.o"
 "candemo\can.o"
+"candemo\tim.o"
+"candemo\usart.o"
 "candemo\stm32f1xx_it.o"
 "candemo\stm32f1xx_hal_msp.o"
 "candemo\stm32f1xx_hal_gpio_ex.o"
@@ -17,8 +19,15 @@
 "candemo\stm32f1xx_hal_flash.o"
 "candemo\stm32f1xx_hal_flash_ex.o"
 "candemo\stm32f1xx_hal_exti.o"
+"candemo\stm32f1xx_hal_tim.o"
+"candemo\stm32f1xx_hal_tim_ex.o"
+"candemo\stm32f1xx_hal_uart.o"
 "candemo\system_stm32f1xx.o"
---strict --scatter "candemo\candemo.sct"
+"candemo\bsp_encode.o"
+"candemo\bsp_motor.o"
+"candemo\mission_can.o"
+"candemo\mission_uart.o"
+--library_type=microlib --strict --scatter "candemo\candemo.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "candemo.map" -o candemo\candemo.axf

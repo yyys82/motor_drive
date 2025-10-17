@@ -19,6 +19,8 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "can.h"
+#include "tim.h"
+#include "usart.h"
 #include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
@@ -162,8 +164,12 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_CAN_Init();
+  MX_TIM2_Init();
+  MX_TIM3_Init();
+  MX_TIM4_Init();
+  MX_USART2_UART_Init();
   /* USER CODE BEGIN 2 */
- HAL_CAN_Start(&hcan);
+  HAL_CAN_Start(&hcan);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -171,8 +177,7 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-    CAN_Send_Msg(data,6);
-		HAL_Delay(1000);
+
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

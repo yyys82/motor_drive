@@ -25,3 +25,6 @@ candemo\stm32f1xx_hal_gpio_ex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_h
 candemo\stm32f1xx_hal_gpio_ex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
 candemo\stm32f1xx_hal_gpio_ex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
 candemo\stm32f1xx_hal_gpio_ex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
+candemo\stm32f1xx_hal_gpio_ex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
+candemo\stm32f1xx_hal_gpio_ex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+candemo\stm32f1xx_hal_gpio_ex.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
