@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"candemo\startup_stm32f103xb.o"
+"candemo\main.o"
+"candemo\gpio.o"
+"candemo\can.o"
+"candemo\stm32f1xx_it.o"
+"candemo\stm32f1xx_hal_msp.o"
+"candemo\stm32f1xx_hal_gpio_ex.o"
+"candemo\stm32f1xx_hal_can.o"
+"candemo\stm32f1xx_hal.o"
+"candemo\stm32f1xx_hal_rcc.o"
+"candemo\stm32f1xx_hal_rcc_ex.o"
+"candemo\stm32f1xx_hal_gpio.o"
+"candemo\stm32f1xx_hal_dma.o"
+"candemo\stm32f1xx_hal_cortex.o"
+"candemo\stm32f1xx_hal_pwr.o"
+"candemo\stm32f1xx_hal_flash.o"
+"candemo\stm32f1xx_hal_flash_ex.o"
+"candemo\stm32f1xx_hal_exti.o"
+"candemo\system_stm32f1xx.o"
+--strict --scatter "candemo\candemo.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "candemo.map" -o candemo\candemo.axf
